@@ -1,4 +1,4 @@
-# CartPole
+# Solving the Cart Pole problem using Reinforcement Learning and Control theory
 
 ## Dependencies
 To install dependencies:
@@ -11,7 +11,10 @@ conda env create -f environment.yml
 To train the RL agent and test it:
 
 ```bash
-python main.py
+python rl.py
 ```
 
-To run the run the agent trained using Control theory, run the notebook control_theory.ipynb.
+To operate the system using a PID controller:
+```bash
+python control.py
+```

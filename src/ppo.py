@@ -249,4 +249,5 @@ def ppo(env_fn, actor_critic=utils.MLPActorCritic, ac_kwargs=dict(), seed=0,
             wandb.log({"loss value_network": loss_v,
                         "loss policy_network": loss_pi
                         })
-            
+    
+    return ac
