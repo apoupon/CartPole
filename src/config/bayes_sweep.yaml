@@ -1,0 +1,25 @@
+project: "ADR_mission_planning"
+program: wandb_sweep.py
+method: bayes
+metric:
+  name: avg_reward
+  goal: maximize
+parameters:
+  tau:
+    min: 0.001
+    max: 0.1
+  learning_rate:
+    min: 0.0001
+    max: 0.003
+  gamma:
+    min: 0.94
+    max: 1.0
+  minibatch_size:
+    min: 35
+    max: 90
+  replay_updates_per_step:
+    min: 5
+    max: 8
+  replay_buffer_size:
+    min: 350000
+    max: 450000
