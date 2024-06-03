@@ -34,5 +34,7 @@ if __name__ == '__main__':
 
         angles_list.append(angle)
 
-
     env.close()
+    
+    plt.plot(steps, angles_list)
+    plt.show()
